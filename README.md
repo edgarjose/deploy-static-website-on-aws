@@ -22,7 +22,7 @@ find /var/www -type f -exec sudo chmod 0664 {} \;
 cd /tmp
 wget https://github.com/edgarjose/deploy-static-website-on-aws/archive/refs/heads/main.zip
 
-unzip main.zip
+unzip deploy-static-website-on-aws-main.zip
 
 cd deploy-static-website-on-aws-main
 
