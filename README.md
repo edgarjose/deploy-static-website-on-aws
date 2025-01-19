@@ -24,7 +24,7 @@ wget https://github.com/edgarjose/deploy-static-website-on-aws/archive/refs/head
 
 unzip main.zip
 
-cd static-website-main
+cd deploy-static-website-on-aws-main
 
 cp -r festava_live/* /var/www/html/
 
