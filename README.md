@@ -20,7 +20,7 @@ find /var/www -type f -exec sudo chmod 0664 {} \;
 
 ## Passo 5: Baixar e extrair o website estático
 cd /tmp
-wget https://github.com/edgarjose/static-website/archive/refs/heads/main.zip
+wget https://github.com/edgarjose/deploy-static-website-on-aws/archive/refs/heads/main.zip
 
 unzip main.zip
 
