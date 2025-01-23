@@ -19,7 +19,7 @@ sudo chmod 2775 /var/www && find /var/www -type d -exec sudo chmod 2775 {} \;
 find /var/www -type f -exec sudo chmod 0664 {} \;
 
 ## Passo 5: Baixar e extrair o website estático
- cd /tmp
+ cd /var/www/html/
  
 wget https://github.com/edgarjose/festava_live/archive/refs/heads/main.zip
           
