@@ -25,7 +25,7 @@ wget https://github.com/edgarjose/festava_live/archive/refs/heads/main.zip
           
 unzip main.zip
           
-cp -r festava_live-main/* .
+cp -r festava_live-main/* /var/www/html/
           
 rm -rf festava_live-main main.zip
 
