@@ -19,19 +19,17 @@ sudo chmod 2775 /var/www && find /var/www -type d -exec sudo chmod 2775 {} \;
 find /var/www -type f -exec sudo chmod 0664 {} \;
 
 ## Passo 5: Baixar e extrair o website estático
-cd /tmp
-wget https://github.com/edgarjose/deploy-static-website-on-aws/archive/refs/heads/main.zip
+ cd /tmp
+ 
+wget https://github.com/edgarjose/festava_live/archive/refs/heads/main.zip
+          
+unzip main.zip
+          
+cp -r festava_live-main/* .
+          
+rm -rf festava_live-main main.zip
 
-unzip deploy-static-website-on-aws-main.zip
-
-cd deploy-static-website-on-aws-main
-
-cp -r festava_live/* /var/www/html/
-
-## Passo 6: Limpar ficheiros temporários
-rm -rf festava_live main.zip
-
-## Passo 7: Configurar o Apache para iniciar automaticamente e iniciar o serviço
+## Passo 6: Configurar o Apache para iniciar automaticamente e iniciar o serviço
 sudo systemctl enable httpd
 
 sudo systemctl start httpd
